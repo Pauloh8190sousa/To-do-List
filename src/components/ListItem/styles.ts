@@ -18,7 +18,10 @@ input {
     margin-right: 5px;
 }
 label {
-    color: #CCC;
+    color: ${done ? "#AAA" : "#FFF"};
     text-decoration: ${done ? "line-through" : "initial"};
+    span {
+        color: ${done ? "#32CD32" : "#FF6347"};
+    }
 }
 `));
